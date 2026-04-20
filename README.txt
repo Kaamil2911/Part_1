@@ -1,6 +1,8 @@
 ST10435512
 Kaamil Mokomela
-Organisation Overview:
+Project Name: Creme de la Creme
+
+Organization Overview:
 History
 Creme de la creme is a French inspired bakery that truly encapsulates the essence of what a high quality baked good should be. It was established in Monaco, a small country to the South of France. A family run business made initially to bring new ideas and new flavours to Fontvielle (city) as there was a lack of unique products at the time.
 Mission
