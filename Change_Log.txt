@@ -1,0 +1,47 @@
+added the title, header and nav bar, along with changing background color. Also created 5 pages where the nav bar has links to all of them
+8e874a514cd727b8dea7a70caf85a530a7faf571
+
+added a navigation bar, changed background colour and created 4 pages which the nav bar is linked to
+beaf3ebb47e9d6d49d1b7a30450b12785fa49c7f
+
+added another heading, added an image, made text ivory colour, added paragraph and a footer
+14393517d3b151316669ac15ce4c4e79e6f13acc
+
+added more images, added section tags along with an about us section that as a heading and paragaph along with <br> tags to align to left
+92abc43cfc038c556793878c8359b827f59897b0
+
+Added all webpages to github along with adding navigation bars to all pages so they can be traversed through each other
+43820049e6416d9cdb647545bb32c651a245e4c2
+
+added images file
+614d203e297b9771107c3c397ff92594af4da60e
+
+added a form for user input such as name email and what message they would like to submit, along with an iframe point to a location
+0664e57056bf276b49121bff72124dd0df661159
+
+added a section showing off the 3 most popular products. 3 images all within a div that will be styled at a later point
+665aec64532f8c2864c3d6be8fe1867a0a9131d6
+
+Added another section for cakes, ideally i would use CSS to align them in a row instead of stacking them on each other
+8f08adc4a247ba44b002d0eea873506832a355db
+
+Added bread (images and description) and footer
+a526c87036c9229a77cc4a1542757f94a9257570
+
+added FAQ questions and answers
+f6770959cfc0a90e1161d2581b6474380474fa77
+
+added product images folder
+2a3b8b8c1b4299754077afa5f5b097613f8dc796
+
+modified hero image to appear bigger
+56d6d96286d23ae8424a6b648dd91950e3308dc1
+
+added README and references
+34a6a96df72eb1ff966b212380a41c71c93d8d63
+
+
+
+
+
+
