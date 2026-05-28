@@ -6,28 +6,7 @@ header{
     z-index: 1000;
     top: 0;
 }
-ul{
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    gap: 20px; 
-    
-}
 
-a:hover{
-    color: gold;
-    cursor: pointer;
-}
-
-a:link{
-    color: ivory;
-    text-decoration: none;
-}
-
-a:visited{
-    color: ivory;
-}
 .hero-image{
     background-image: url("images/pain_au_chocolate.jpg");
     background-size: cover;
@@ -57,29 +36,10 @@ a:visited{
     background-image: linear-gradient(to right, rgb(168,146,19) 50%, rgb(66,15,15)50%);
     background-size: 200% 100%;
     background-position: right bottom;
-    transition: all 0.5s ease-out;
-    
+    transition: all 0.5s ease-out
 
 }
 .explore_button:hover{
     background-position: left bottom;
     color: rgb(66,15,15)
 }
-
-.container{
-    display: flex;
-    justify-content: center;
-
-}
-
-
-.passion_heading{
-    text-align: center;
-    padding-top: 40px;
-}
-
-.passion_paragraph{
-    
-    text-align: center;
-}
-
