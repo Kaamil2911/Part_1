@@ -1,4 +1,5 @@
-*{margin: 0}
+*{margin: 0;
+box-sizing: border-box}
 header{
     text-align: center;
     padding: 14px;
@@ -20,9 +21,179 @@ header{
     color: ivory;
 }
 
-.explore_button{
-    font-size: 16px;
-    color: gold;
+
+body{
+    background-color: rgb(66, 15, 15) ;
+    color: ivory;
+}
+
+.product_row {
+    display: flex;       /* Put them in a row */
+    gap: 0px;           /* Add space between them */
+    width: 100%;
+    height: 400px;
+}
+
+.product_row img {
+    flex: 1;             /* Make all three equal width */
+    object-fit: cover;   /* Like background-size: cover, but for <img> tags */
+    width: 100%;
+    height: 100%;
+    
+}
+
+header{
+    text-align: center;
+    background-color: black;
+    padding: 14px;
+    position: sticky;
+    z-index: 1000;
+    top:0;
+}
+h1 {
+    color: #FFFFF0;
+}
+
+ul{
+    display: flex;          
+    list-style-type: none;  
+    padding: 0;             
+    margin: 0;
+    gap: 20px;
+}
+
+a:hover{
+    color:#D4AF37;
+    cursor: pointer;
+
+}
+a:link{
+
+    color: #FFFFF0;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #FFFFF0;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    border-bottom: #D4AF37;
+}
+
+h2{
+    text-align: center;
+    margin-top: 20px; 
+
+}
+
+body{
+    background-color: rgb(66, 15, 15);
+    font-family: 'Times New Roman', Times, serif;
+    color: #FFFFF0;
+
+}
+
+header{
+    text-align: center;
+    background-color:rgb(10, 10, 10);
+    padding: 14px;
+    position: sticky;
+    z-index: 1000;
+    top:0;
+}
+h1 {
+    color: #FFFFF0;
+}
+
+ul{
+    display: flex;          
+    list-style-type: none;  
+    padding: 0;             
+    margin: 0;
+    gap: 20px;
+}
+
+a:hover{
+    color:#D4AF37;
+    cursor: pointer;
+
+}
+a:link{
+
+    color: #FFFFF0;
+    text-decoration: none;
+}
+a:visited{
+    color: #FFFFF0;
+    
+}
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    
+}
+
+
+.opener{
+    background-image: url("images/pain_au_chocolate.jpg");
+    background-size: cover;      
+    background-position: center;  
+    height: 1000px;                
+    width: 100%;                 
+    
+}
+.opener_heading{
+    text-align: center;
+    position: absolute;
+    top: 450px;
+    left: 26%;
+    font-size: 70px;
+    color:rgb(224, 241, 238)
+    }
+
+
+.card{
+    background-color: rgba(255, 255, 240, 0.1);
+    border: 1px solid #D4AF37;                 
+    color: #FFFFF0;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 70%;
+    position: relative;
+    
+}
+
+.h2{
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: underline;
+    margin-right: 140px ;
+}
+
+.card{
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3); 
+    cursor: pointer;
+}
+#story_heading{
+    font-size: 80px;
+}
+
+#story_link {
+    
+    font-size: 16px; 
+    color: gold;   
     border: solid 1px gold;
     padding: 20px;
     margin-top: 10px;
@@ -32,14 +203,119 @@ header{
     display: inline-block;
     text-align: center;
 
-    background-color: rgb(66,15,15);
-    background-image: linear-gradient(to right, rgb(168,146,19) 50%, rgb(66,15,15)50%);
+    
+    background-color: rgb(66, 15, 15); 
+    background-image: linear-gradient(to right, rgb(168, 146, 19) 50%, rgb(66, 15, 15) 50%);
     background-size: 200% 100%;
     background-position: right bottom;
-    transition: all 0.5s ease-out
+    transition: all 0.5s ease-out;
+}
+
+#story_link:hover {
+    background-position: left bottom;
+    color: rgb(66, 15, 15); 
+}
+
+#story_paragraph{
+    margin-top: 20px;
+    line-height: 160%;
+    margin-bottom: 20px;
+}
+.story_section {
+    display: flex;         
+    align-items: center;   
+    justify-content: center; 
+    width: 100%;
+    padding: 0 50px;
+}
+.container{
+    padding: 20px; 
+    flex: 1 ;
+    margin: 120px 0;
 
 }
-.explore_button:hover{
-    background-position: left bottom;
-    color: rgb(66,15,15)
+.container_two{
+    flex:1; 
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0;
+}
+
+.container_two img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.passion_container{      /* container for passion card NB the place center to center text and 1fr over 100px*/
+    border-top: solid 2px ivory;
+    
+    display: grid;
+    grid-template-rows: 1fr;
+    height: 200px;
+    margin-left: 40px;
+    width: 95.5%;
+    
+    place-items: center;
+    color: rgb(66, 15, 15);
+    padding: 20px ;
+    
+}
+
+.passion_paragraph{
+    text-align: center;
+    font-size: 30px;
+
+
+}
+.container_three{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    margin-bottom: 50px;
+    
+}
+#container_three_heading{
+    text-align: center;
+
+
+
+}
+.c3_boxes{
+    background-color: ivory;
+    height: 350px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 15px;
+}
+.container_three img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container_three p{
+    color:rgb(66, 15, 15);
+    font-size: 20px;
+    line-height: 160%;
+}
+
+.c3_boxes:hover{
+
+    transform: translateY(-10px);
+
+}
+
+.box_one{
+
+    margin-left: 10px;
+}
+
+.box_three{
+
+    margin-right: 15px;
 }
