@@ -23,3 +23,6 @@ CSS uses both Grid and Flexbox for precise positioning without sacrificing fluid
 Mobile Responsive View
 
 
+C:\Users\Student\Desktop\Part_1\mobile_query.png      movile device screenshot of responsiveness
+Screenshot 2026-05-29 224428.png                   desktop device screenshot of responsiveness
+tablet_query.png                  tablet device screenshot of responsiveness
