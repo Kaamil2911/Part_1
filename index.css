@@ -1,11 +1,43 @@
 *{margin: 0;
 box-sizing: border-box}
-header{
-    text-align: center;
-    padding: 14px;
-    position: sticky;
-    z-index: 1000;
-    top: 0;
+body {
+    background-color: rgb(85, 18, 18);
+    color: ivory;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+}
+
+header h1 {
+    color: ivory;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: ivory;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.7; 
 }
 
 .hero-image{
@@ -17,15 +49,7 @@ header{
 
 
 }
-.text-colour{
-    color: ivory;
-}
 
-
-body{
-    background-color: rgb(66, 15, 15) ;
-    color: ivory;
-}
 
 .product_row {
     display: flex;       /* Put them in a row */
@@ -42,14 +66,6 @@ body{
     
 }
 
-header{
-    text-align: center;
-    background-color: black;
-    padding: 14px;
-    position: sticky;
-    z-index: 1000;
-    top:0;
-}
 h1 {
     color: #FFFFF0;
 }
@@ -78,12 +94,6 @@ a:visited{
     
 }
 
-nav{
-    display: flex;
-    justify-content: center;
-    background-color: transparent;
-    border-bottom: #D4AF37;
-}
 
 h2{
     text-align: center;
@@ -91,12 +101,6 @@ h2{
 
 }
 
-body{
-    background-color: rgb(66, 15, 15);
-    font-family: 'Times New Roman', Times, serif;
-    color: #FFFFF0;
-
-}
 
 header{
     text-align: center;
@@ -248,7 +252,7 @@ nav{
     object-position: center;
 }
 
-.passion_container{      /* container for passion card NB the place center to center text and 1fr over 100px*/
+.passion_container{      /* container for passion card the place center to center text and 1fr over 100px*/
     border-top: solid 2px ivory;
     
     display: grid;
@@ -364,6 +368,7 @@ input[type="password"]{
     color: ivory ; 
     font-size: 1rem;
     box-sizing: border-box;
+    background-color: rgba(255,255,255,0.1);
 }
 
 input[type="submit"]{
@@ -410,7 +415,7 @@ input[type="submit"]{
 
 .container_three img {
     width: 100%;
-    height: 220px; /* Gives the image a fixed, uniform height across all 3 boxes */
+    height: 220px; 
     display: block;
     object-fit: cover;
     object-position: center;
@@ -420,12 +425,21 @@ input[type="submit"]{
     color: rgb(66, 15, 15);
     font-size: 20px;
     line-height: 160%;
-    padding: 15px; /* Adds breathing room around your description text */
+    padding: 15px; /*space for containers*/
 }
 
 /* Hover Effects */
 .c3_boxes:hover {
     transform: translateY(-10px);
-    /* Added a soft shadow on hover to make the card "lift" off the page */
+    /* Added a soft shadow on hover to make the card lift off the page */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
+
+#bakery_section{
+    padding: 80px;
+    text-align: center;
+    border-top: solid ivory 4px;
+    border-width: 80%;
+    font-size: 40px;
+}
+
