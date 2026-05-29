@@ -378,3 +378,54 @@ input[type="submit"]{
     cursor: pointer;
     margin-top: 15px;
 }
+.container_three {
+    display: grid;
+    /* Locks the layout to exactly 3 equal columns in a single row */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem; /* Slightly widened gap for a cleaner, modern look */
+    margin-bottom: 50px;
+    padding: 0 15px; /* Replaces manual margins on boxes to keep grid perfectly aligned */
+}
+
+#container_three_heading {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 40px;
+}
+
+.c3_boxes {
+    background-color: ivory;
+    /* Changed to min-height so content (image + text) fits without spilling out */
+    min-height: 350px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   
+    /* Smooth rounded corners to make the product cards look elegant */
+    border-radius: 8px;
+    overflow: hidden; /* Keeps the image corners rounded too */
+}
+
+.container_three img {
+    width: 100%;
+    height: 220px; /* Gives the image a fixed, uniform height across all 3 boxes */
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container_three p {
+    color: rgb(66, 15, 15);
+    font-size: 20px;
+    line-height: 160%;
+    padding: 15px; /* Adds breathing room around your description text */
+}
+
+/* Hover Effects */
+.c3_boxes:hover {
+    transform: translateY(-10px);
+    /* Added a soft shadow on hover to make the card "lift" off the page */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
