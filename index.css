@@ -319,3 +319,62 @@ nav{
 
     margin-right: 15px;
 }
+
+ol{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 25px;
+    letter-spacing: 0.5px;
+}
+
+footer{color: ivory;
+text-align: center;
+padding: 1.5rem 0;
+font-size: 0.9rem;
+width: 100%;
+position: fixed;
+bottom: 0;
+left: 0;
+}
+
+
+label{font-weight: 600;
+margin-top: 10px;
+font-size: 0.95rem;
+letter-spacing: 0.5px;}
+
+body > label,
+body > input,
+body > br{
+    display: block;
+    max-width: 350px;
+    margin: 0 auto;
+
+}
+
+input[type="text"],
+input[type="password"]{
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid ivory;
+    border-radius: 4px;
+    color: ivory ; 
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input[type="submit"]{
+    width : 100%;
+    max-width: 350px;
+    background-color: ivory;
+    border: none;
+    padding: 12px;
+    font-size: 1rem ;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+}
