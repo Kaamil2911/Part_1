@@ -7,49 +7,52 @@
     <link rel = "stylesheet" href="index.css">
     
 </head>
-<body style = "background-color: rgb(85, 18, 18);">
-    <header style="background-color: black;">
-        <h1 class = "heading" style = "color: ivory;"> Creme de la Creme </h1>
+<body>
+    <header> <h1>Crème de la Crème</h1>
         <nav>
             <ul>
-                <li><a href="Products.html">Products </a></li>      <!-- navigation bar with an unordered list with a link to the other web pages-->
-                <li><a href="Contact.html">Contact </a></li>
-                <li><a href="FAQ.html">FAQ </a></li>
-                <li><a href="User_Login.html">User Login </a></li>
+                <li><a href = "contact.html">Contact</a></li>
+                <li><a href = "products.html">Products</a></li>
+                <li><a href = "FAQ.html">FAQ </a></li>
             </ul>
-
         </nav>
     </header>
- <section class = "text-colour"> <!-- added a section to seperate content -->
-
-    <img class = "hero-image">   <!-- image of product along with a small description about the quality of work-->
     
-    <h2> Passion, Patience, Perfection</h2>
+    <section class = "opener">
+        <h1 class = "opener_heading">C'est un régal / It's a real treat</h1>
+            
+    </section>
+
+    <section class = "story_section">
+        <div class = "container">
+        <div class = "story">
+            <h1 id = "story_heading">Passion, Patience, <br>Perfection</h1>
+            <p id = "story_paragraph">At Crème de la Crème, these three pillars guide our baking process. We pour our passion into every creation, <br>practice patience to achieve the finest flavors, and strive for perfection in every detail. <br>Experience the difference that true dedication makes in every delicious bite! </p>
+            <a id = "story_link" href = "products.html">Explore </a>
+
+        </div>
+        </div>
+
+        <div class = container_two>
+            <img src="product_images/eclair.jpg" width="230" height="230">
+            <img src="product_images/chocolate.jpg" width="230" height="230">
+            <img src="product_images/sourdough_product.jpg" width="230" height="230">
+            <img src="product_images/opera_cake.jpg" width="230" height="230">
+        </div>
+    </section>
+    <section class = "Passion">
+
+        <div class = "passion_container">
+            <div class = "passion_paragraph">
+            </div>
+        </div>
+
+    </section>
+    <footer style = "background-color: black;"> <p>&copy; Creme de la Creme. All rights reserved.</p></footer>
+    
+    
+    <script src ="index.js">
         
-    <p > 
-            At creme de la creme these three pillars guide our baking process <br>
-            we pour our passsion into every creation, <br> 
-            practice patience to achieve our finest flavours and strive for perfection </p>
-       <a class= "explore_button" href="Products.html">Explore</a>
-        <!-- button taking the user to product page if they want to go directly-->
-</section>  
-<section>
-    
-
-<!-- more product images-->
-    <div class ="container">
-        <img src="images\croissant.jpg" width = "200" height= "200">
-        <img src="images\canelle.jpg" width = "200" height= "200">
-        <img src="images\sourdough.jpg" width = "200" height= "200">
-
-    </div>
-    <h2  style = "color: ivory;"> About us </h2>
-
-    <p  style = "color: ivory;">We believe that the best experiences in life are shared over simples pleasures such as food. <br>The perfect loaf of bread or the crustiest pastry. We create experiences.
-        Our ingredients are locally sourced and every bit meets the highest standards. <br>We are proud to be part of a welcoming community and we truly hope you enjoy. </p>
-
-</section>
-
-<footer style ="background-color: black;"> <p style="color: ivory;">Footer</p></footer>
+    </script>
 </body>
 </html>
