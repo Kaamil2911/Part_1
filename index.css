@@ -1,6 +1,6 @@
 *{margin: 0;
 box-sizing: border-box}
-body {
+body { /* base background color and fonts for the text throughtout the site, i tried to be consistent where possible */
     background-color: rgb(85, 18, 18);
     color: ivory;
     font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -101,7 +101,7 @@ h2{
 
 }
 
-
+/* css for the nav bar that spans all pages. */
 header{
     text-align: center;
     background-color:rgb(10, 10, 10);
@@ -143,7 +143,7 @@ nav{
     
 }
 
-
+/* hero image that takes up the whole screen*/
 .opener{
     background-image: url("images/pain_au_chocolate.jpg");
     background-size: cover;      
@@ -193,7 +193,7 @@ nav{
 #story_heading{
     font-size: 80px;
 }
-
+/* the explore link of the home page that takes the user to the product page. This link also has an animation when the user hovers on it */
 #story_link {
     
     font-size: 16px; 
@@ -252,7 +252,7 @@ nav{
     object-position: center;
 }
 
-.passion_container{      /* container for passion card the place center to center text and 1fr over 100px*/
+.passion_container{      /* container for passion card the place center to center text */
     border-top: solid 2px ivory;
     
     display: grid;
@@ -286,6 +286,7 @@ nav{
 
 
 }
+/* a series of cards displaying the products to the client, with a description (refer to html) of the product */
 .c3_boxes{
     background-color: ivory;
     height: 350px;
@@ -330,7 +331,7 @@ ol{
     margin-top: 25px;
     letter-spacing: 0.5px;
 }
-
+/* styling of the footer */
 footer{color: ivory;
 text-align: center;
 padding: 1.5rem 0;
@@ -341,7 +342,7 @@ bottom: 0;
 left: 0;
 }
 
-
+/* styled the labels and forms to better suit the general aestetic of the website */
 label{font-weight: 600;
 margin-top: 10px;
 font-size: 0.95rem;
@@ -442,7 +443,8 @@ input[type="submit"]{
     border-width: 80%;
     font-size: 40px;
 }
-
+/* Added media queries for all devices made it so that the images, columns, rows, text and headers all adjust according to the device they are on, most get smaller
+    or change the direction that the images flow to suit the devic */
 @media screen and (max-width: 576px) {
     header{
         flex-direction: column !important;
