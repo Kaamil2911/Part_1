@@ -645,6 +645,7 @@ input[type="submit"]{
 .enquiry_section {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     padding: 80px 20px;
     width: 100%;
@@ -781,4 +782,54 @@ input[type="submit"]{
     color: #D4AF37;
     font-size: 40px;
     margin-bottom: 15px;
+}
+
+.container_three img, .product_row img {
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.container_three img:hover, .product_row img:hover {
+    opacity: 0.9;
+    transform: scale(1.02); /* pop effect on hover */
+}
+
+
+/* Modal Container */
+#image-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stays in place */
+    z-index: 1000; /* Sits on top of everything */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); 
+   
+    /* Setup for your JS fade-in effect */
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+
+#image-modal.show {
+    opacity: 1;
+}
+
+/* The Expanded Image */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    margin-top: 5%; 
+    border-radius: 5px;
+    max-height: 75vh;
+    object-fit: contain;
+}
+
+.close-modal:hover{
+    color: gold;
+    transform: scale(1.1);
+    cursor: pointer;
 }
