@@ -24,29 +24,56 @@
     <h1> Our Location</h1><!--Iframe showing the location on google maps-->
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1655.6124173262933!2d18.410972267667567!3d-33.90961254043749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1776695864657!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <h2>Contact us</h2>
-    <form action ="submit" method="post">  
+    <div class="enquiry_container">
+        <h2 class="enquiry_heading">Let's Bake Something Special</h2>
+        <p class="enquiry_subheading">Fill out the form below for custom cakes, catering, or general orders.</p>
         
-        <label for="name"> Name:</label>
-        <br>
-        <input type="text" name="name" id="name" required>
-        <br>
-        <br>
-        <!--email and input label-->
-        <label for="email"> Email:</label>
-        <br>
-        <input type="text" name="email" id="email" required>
-        <br>
-        <br><label for="message"> Message: </label>
-        <br>
-        <!-- text area-->
-        <textarea name="message" id='message'rows='4' required></textarea>
-        <br>
-    
-        <br>
-        <!-- submit button-->
-         <input type="submit" value='Submit'>
-        <input type="reset" value='Reset'>
-    </form>
+        <form id="bakeryForm" novalidate>
+            <div class="form_group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" placeholder="Jean-Luc Pastry">
+                <div class="error_message" id="nameError">Names must be at least 2 characters long and contain only letters.</div>
+                <div class="error_message" id="nameError">Please enter your full name.</div>
+            </div>
+
+            <div class="form_group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="example@creme.com">
+                <div class="error_message" id="emailError">Please enter a valid email address.</div>
+            </div>
+
+            <div class="form_group">
+                <label for="enquiryType">What are you looking for?</label>
+                <select id="enquiryType">
+                    <option value="" selected disabled>Select an option...</option>
+                    <option value="custom_cake">Custom Celebration Cake</option>
+                    <option value="pastry_catering">Pastry Catering / Events</option>
+                    <option value="sourdough_wholesale">Sourdough & Wholesale</option>
+                    <option value="general_enquiry">General Inquiry</option>
+                </select>
+                <div class="error_message" id="typeError">Please select an enquiry option.</div>
+            </div>
+
+            <div class="form_group">
+                <label for="eventDate">Required Date</label>
+                <input type="date" id="eventDate">
+                <div class="error_message" id="dateError">Please select a valid future date.</div>
+            </div>
+
+            <div class="form_group">
+                <label for="message">Your Message & Details</label>
+                <textarea id="message" rows="5" placeholder="Tell us about flavors, servings, or special dietary requirements..."></textarea>
+                <div class="error_message" id="messageError">Please share some details about your enquiry.</div>
+            </div>
+
+            <button type="submit" id="form_submit_btn">Send Enquiry</button>
+        </form>
+        
+        <div id="formSuccessWindow" class="success_window">
+            <h3>Merci!</h3>
+            <p>Your enquiry has been whisked away to our kitchen. We will be in touch shortly.</p>
+        </div>
+    </div>
  </section>
  <footer style = "background-color: black;"> <p>&copy; Creme de la Creme. All rights reserved.</p></footer>
 </body>

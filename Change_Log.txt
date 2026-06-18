@@ -1,3 +1,4 @@
+20 April 2026
 added the title, header and nav bar, along with changing background color. Also created 5 pages where the nav bar has links to all of them
 8e874a514cd727b8dea7a70caf85a530a7faf571
 
@@ -39,6 +40,24 @@ modified hero image to appear bigger
 
 added README and references
 34a6a96df72eb1ff966b212380a41c71c93d8d63
+
+22 May
+
+Added css styling to page, changed position of picutures to align the headings
+26 May 
+
+-Restructured website, kept most elements the same just moved them around so they are more consistent, such as moving products from landing page to product page
+
+28 May 2026
+
+-Fixed Spelling mistakes
+
+-Made containers for images and products so they the user has an easier time navigating the website
+-Added a second map for Location
+-Re styled nav bar and footer to look more professional 
+-Added media queries so that the website is functionional and responsive with all devices
+-Updated file strcuture to be in line with project requirements
+
 
 
 
