@@ -34,3 +34,33 @@ document.addEventListener('DOMContentLoaded', () => {
     if (closeImageBtn) {
         closeImageBtn.addEventListener('click', closeImageModal);
     }})
+document.addEventListener('DOMContentLoaded', () => {
+
+    
+    const bakeryModal = document.getElementById("bakeryModal");
+    const closeBakeryX = bakeryModal ? bakeryModal.querySelector(".close-btn") : null;
+    const closeBakeryFooterBtn = document.getElementById("closeModalBtn");
+
+    function openBakeryModal() {
+        if (bakeryModal) {
+            bakeryModal.style.display = "block";
+            setTimeout(() => {
+                bakeryModal.classList.add("show");
+            }, 10);
+        }
+    }
+
+    function closeBakeryModal() {
+        if (bakeryModal) {
+            bakeryModal.classList.remove("show");
+            setTimeout(() => {
+                bakeryModal.style.display = "none";
+            }, 400);
+        }
+    }
+
+    setTimeout(openBakeryModal, 2000);
+
+    if (closeBakeryX) closeBakeryX.addEventListener("click", closeBakeryModal);
+    if (closeBakeryFooterBtn) closeBakeryFooterBtn.addEventListener("click", closeBakeryModal);
+})
