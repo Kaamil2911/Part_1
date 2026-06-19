@@ -113,3 +113,59 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }})
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    
+    const enquiryForm = document.getElementById('enquiryForm');
+    
+    if (enquiryForm) {
+        enquiryForm.addEventListener('submit', (e) => {
+            e.preventDefault(); // Stop page from reloading
+
+            // Basic Client-Side Validation Variables
+            const name = document.getElementById('enqName').value;
+            const phone = document.getElementById('enqPhone').value;
+            const service = document.getElementById('enqService').value;
+            const responseBox = document.getElementById('enquiryResponse');
+            let isValid = true;
+
+            // Clear previous errors
+            document.querySelectorAll('.error-message').forEach(err => err.style.display = 'none');
+
+            // Custom JS Validation Check
+            if (phone.length !== 10 || isNaN(phone)) {
+                document.getElementById('enqPhoneError').style.display = 'block';
+                isValid = false;
+            }
+
+            // AJAX Submission Simulation
+            if (isValid) {
+                // Change button text to show loading
+                const submitBtn = enquiryForm.querySelector('.btn-submit');
+                submitBtn.innerText = "Processing...";
+
+                // We use setTimeout to simulate the delay of an AJAX network request to a server
+                setTimeout(() => {
+                    // This simulates the server returning availability and cost
+                    let mockCost = "R0.00";
+                    if (service === "catering") mockCost = "Starting at R1500";
+                    if (service === "wedding_cake") mockCost = "Starting at R2800";
+                    if (service === "wholesale") mockCost = "Custom Quote Required";
+
+                    // Display the AJAX response
+                    responseBox.innerHTML = `
+                        <h3>Quote Generated</h3>
+                        <p>Thank you, ${name}. Our <strong>${service.replace('_', ' ')}</strong> services are currently available.</p>
+                        <p style="color: #d4af37; font-size: 1.2em;">Estimated Cost: ${mockCost}</p>
+                    `;
+                    responseBox.style.display = 'block';
+                    
+                    // Reset form and button
+                    enquiryForm.reset();
+                    submitBtn.innerText = "Check Availability via AJAX";
+
+                }, 1500); // 1.5 second simulated delay
+            }
+        });
+    }})
