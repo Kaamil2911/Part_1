@@ -58,6 +58,22 @@ Added css styling to page, changed position of picutures to align the headings
 -Added media queries so that the website is functionional and responsive with all devices
 -Updated file strcuture to be in line with project requirements
 
+18 June 2026
+
+-Added lightbox gallery
+-modified form functionality
+
+added javascript for light box interactiveness
+
+
+
+19 June 2026
+
+-Added interactive map
+-Added search bar which maps to what the user types
+-Added meta tags for SEO
+
+
 
 
 

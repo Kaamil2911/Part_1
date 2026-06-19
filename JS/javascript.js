@@ -169,3 +169,51 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }})
+
+document.addEventListener('DOMContentLoaded', () => {
+    
+    const mapContainer = document.getElementById('bakery-map');
+
+    if (mapContainer) {
+        // Coordinates format: [Latitude, Longitude]
+        const bakeryCoords = [-33.9120, 19.1171]; 
+
+        // Initialize the map
+        const map = L.map('bakery-map', {
+            zoomControl: false 
+        }).setView(bakeryCoords, 15);
+
+        // Add minimalist zoom control to the bottom right
+        L.control.zoom({ position: 'bottomright' }).addTo(map);
+
+        // Load the Premium Light Minimalist Map Tiles
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap &copy; CARTO',
+        subdomains: 'abcd',
+        maxZoom: 20
+        }).addTo(map);
+
+        // Create the custom gold pin icon
+        const goldIcon = L.divIcon({
+            className: 'custom-gold-pin',
+            iconSize: [20, 20],
+            iconAnchor: [10, 10]
+        });
+
+        // Drop the pin and attach text popup
+        L.marker(bakeryCoords, { icon: goldIcon })
+            .addTo(map)
+            .bindPopup(`
+                <div style="text-align: center; padding: 5px;">
+                    <strong style="color: #d4af37; font-size: 1.1em;">Crème de la Crème</strong><br>
+                    <span style="font-size: 0.9em; color: #ccc;">Artisanal French Bakery</span>
+                </div>
+            `)
+            .openPopup();
+
+        
+        setTimeout(() => {
+            map.invalidateSize();
+        }, 100);
+    }
+});
