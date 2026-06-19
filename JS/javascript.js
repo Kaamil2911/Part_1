@@ -64,3 +64,52 @@ document.addEventListener('DOMContentLoaded', () => {
     if (closeBakeryX) closeBakeryX.addEventListener("click", closeBakeryModal);
     if (closeBakeryFooterBtn) closeBakeryFooterBtn.addEventListener("click", closeBakeryModal);
 })
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    const searchForm = document.getElementById('nav-search-form');
+    const searchInput = document.getElementById('search-input');
+
+    if (searchForm && searchInput) {
+        searchForm.addEventListener('submit', (e) => {
+            e.preventDefault(); // Prevent page reload
+            
+            // Get the text, remove extra spaces, and make it lowercase
+            const query = searchInput.value.trim().toLowerCase();
+            
+            if (query) {
+                
+                // Check if the search word includes certain keywords, then redirect to that page
+                
+                if (query.includes('cake') || query.includes('cakes')) {
+                    
+                    window.location.href = 'Products.html#cakes';
+                    
+                } else if (query.includes('eclair') || query.includes('pastry') || query.includes('croissant')) {
+                    
+                    window.location.href = 'products.html#pastries';
+                    
+                } else if (query.includes('bread') || query.includes('sourdough')) {
+                    
+                    window.location.href = 'products.html#breads';
+                    
+                } else if (query.includes('contact') || query.includes('location')) {
+                    
+                    window.location.href = 'contact.html';
+                    
+                } else if (query.includes('faq') || query.includes('question')) {
+                    
+                    window.location.href = 'FAQ.html';
+                    
+                } else {
+                    
+                    window.location.href = 'products.html';
+                }
+                
+                // Clear the search bar after hitting enter
+                searchInput.value = '';
+            } else {
+                searchInput.focus(); // Bring cursor back if empty
+            }
+        });
+    }})
