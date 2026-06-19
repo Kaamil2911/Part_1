@@ -85,17 +85,17 @@ document.addEventListener('DOMContentLoaded', () => {
                     
                     window.location.href = 'Products.html#cakes';
                     
-                } else if (query.includes('eclair') || query.includes('pastry') || query.includes('croissant')) {
+                } else if (query.includes('muffin') || query.includes('muffins') || query.includes('berry')) {
                     
-                    window.location.href = 'products.html#pastries';
+                    window.location.href = 'Products.html#muffins';
                     
                 } else if (query.includes('bread') || query.includes('sourdough')) {
                     
-                    window.location.href = 'products.html#breads';
+                    window.location.href = 'Products.html#bread';
                     
                 } else if (query.includes('contact') || query.includes('location')) {
                     
-                    window.location.href = 'contact.html';
+                    window.location.href = 'Contact.html';
                     
                 } else if (query.includes('faq') || query.includes('question')) {
                     
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     
                 } else {
                     
-                    window.location.href = 'products.html';
+                    window.location.href = 'Products.html';
                 }
                 
                 // Clear the search bar after hitting enter
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
         enquiryForm.addEventListener('submit', (e) => {
             e.preventDefault(); // Stop page from reloading
 
-            // Basic Client-Side Validation Variables
+            // client side validation
             const name = document.getElementById('enqName').value;
             const phone = document.getElementById('enqPhone').value;
             const service = document.getElementById('enqService').value;
@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const submitBtn = enquiryForm.querySelector('.btn-submit');
                 submitBtn.innerText = "Processing...";
 
-                // We use setTimeout to simulate the delay of an AJAX network request to a server
+                // use setTimeout to simulate the delay of an AJAX network request to a server
                 setTimeout(() => {
                     // This simulates the server returning availability and cost
                     let mockCost = "R0.00";

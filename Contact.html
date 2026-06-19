@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Contact page to find location of bakery</title>
+    <meta name="description" content="Visit this page to contact us about anything or to find our location on a map">
+    <meta name="robots" content="index, follow">
     
-    <link rel= "stylesheet" href = "index.css">
+    <link rel="canonical" href="https://www.cremedelacreme.com/Contact.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Crème de la Crème | Artisanal French Bakery">
+    <meta property="og:description" content="Contact page for users for general contact">
+    <meta property="og:image" content="https://www.cremedelacreme.com/images/social-share.jpg">
+    <meta property="og:url" content="https://www.cremedelacreme.com/Contact.html">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Crème de la Crème | Artisanal French Bakery">
+    <meta name="twitter:description" content="Indulge in freshly baked, artisanal French pastries.">
+    <meta name="twitter:image" content="https://www.cremedelacreme.com/images/social-share.jpg">
+
+    <link rel="stylesheet" href="index.css">
+    
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 </head>
 <body style = "background-color: rgb(85, 18, 18);">
     <header style="background-color: black;">
@@ -16,17 +38,24 @@
                 <li><a href="Products.html">Products </a></li>      <!-- navigation bar with an unordered list with a link to the other web pages-->
                 <li><a href="FAQ.html">FAQ </a></li>
                 <li><a href="User_Login.html">User Login </a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
             </ul>
 
         </nav>
     </header>
- <section>   
-    <h1> Our Location</h1><!--Iframe showing the location on google maps-->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1655.6124173262933!2d18.410972267667567!3d-33.90961254043749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1776695864657!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ <section >   
+    <div class="form-page-wrapper">
+    <section class="form-section">  
+    <h1> Our Location</h1><!-- showing the location on google maps-->
+    <div class="map-wrapper">
+    <div id="bakery-map"></div>
+</div>
+    <!-- Form for user to fill in -->
+    
     <h2>Contact us</h2>
     <div class="enquiry_container">
         <h2 class="enquiry_heading">Let's Bake Something Special</h2>
-        <p class="enquiry_subheading">Fill out the form below for custom cakes, catering, or general orders.</p>
+        <p class="enquiry_subheading">Fill out the form below for general enquiries.</p>
         
         <form id="bakeryForm" novalidate>
             <div class="form_group">
@@ -76,5 +105,6 @@
     </div>
  </section>
  <footer style = "background-color: black;"> <p>&copy; Creme de la Creme. All rights reserved.</p></footer>
+ <script src="JS/javascript.js"></script>
 </body>
 </html>

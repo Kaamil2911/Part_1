@@ -246,29 +246,39 @@ nav{
 }
 .video_grid{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     gap: 20px;
     width: 100%;
     align-items: start;
 }
-
+/* container for videos in index page */
 .video_card{
-    background-color: (255,255,240,0.1);
+    background-color: ivory;
     border: 1px solid gold;
-
+    width: 600px;
+    height: 600px;
     border-radius: 6px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    padding-bottom: 80px;
+    margin-bottom: 20px;
 }
-
+.video_card video{
+    width:100%;
+    height: auto;
+    display: block; 
+    object-fit: cover;
+    
+}
 .video_title{
     padding:15px;
     text-align: center;
     font-size: 1.1rem;
     font-weight: bold;
-    color: ivory;
+    color:  rgb(66, 15, 15); ;
+    margin: 0;
 }
 .container{
     padding: 20px; 
@@ -641,7 +651,7 @@ input[type="submit"]{
 
     }
 }
-
+/* stlying for enquiry section */
 .enquiry_section {
     display: flex;
     justify-content: center;
@@ -649,12 +659,12 @@ input[type="submit"]{
     align-items: center;
     padding: 80px 20px;
     width: 100%;
-    background-color: rgb(66, 15, 15); /* Matches your body background */
+    background-color: rgb(66, 15, 15); 
 }
 
 .enquiry_container {
-    background-color: rgb(10, 10, 10); /* Sleek charcoal header background match */
-    border: 1px solid #D4AF37; /* Elegant gold border */
+    background-color: rgb(10, 10, 10); 
+    border: 1px solid #D4AF37; 
     border-radius: 8px;
     padding: 40px;
     width: 100%;
@@ -723,10 +733,10 @@ input[type="submit"]{
 
 /* Error validation states */
 .error_message {
-    color: #ff6b6b; /* Soft crimson red for warning text */
+    color: #ff6b6b; 
     font-size: 14px;
     margin-top: 5px;
-    display: none; /* Hidden by default */
+    display: none; 
 }
 
 /* Class to highlight fields with issues */
@@ -736,7 +746,7 @@ input[type="submit"]{
     border-color: #ff6b6b;
 }
 
-/* Submit Button - Inherits your exact story link animation layout */
+/* Form submit button  */
 #form_submit_btn {
     display: block;
     width: 100%;
@@ -906,7 +916,7 @@ input[type="submit"]{
     margin-top: 5px;
 }
 
-/* Luxury Gold Button */
+/*  Gold Button */
 #bakeryModal .btn-gold {
     background: linear-gradient(135deg, #d4af37, #aa7c11);
     color: #121212;
