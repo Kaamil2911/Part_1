@@ -986,3 +986,93 @@ input[type="submit"]{
 .nav-search button:hover {
     transform: scale(1.1); /* Icon pops slightly when hovered */
 }
+
+.form-page-wrapper {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+    min-height: 80vh;         /* Gives enough room on the viewport to feel centered */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form-section {
+    width: 100%;             /* Allows max-width to do the heavy lifting */
+    max-width: 600px;
+    margin: 0 auto;          /* Cleared top/bottom margins since parent handles it */
+    padding: 30px;
+    background-color: #1a1a1a;
+    border: 2px solid #d4af37;
+    border-radius: 8px;
+    color: ivory;
+    font-family: 'Georgia', serif;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;  /* Prevents padding from breaking width calculations */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #d4af37;
+    letter-spacing: 1px;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #121212;
+    border: 1px solid #555;
+    color: ivory;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box; /* scaling */
+}
+
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus {
+    border-color: #d4af37;
+    outline: none;
+}
+
+/* Submit Button */
+.btn-submit {
+    background: linear-gradient(135deg, #d4af37, #aa7c11);
+    color: #121212;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: transform 0.2s;
+}
+
+.btn-submit:hover {
+    transform: scale(1.02);
+}
+
+/* Error and Success Message Styling */
+.error-message {
+    color: #ff4c4c;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none; 
+}
+
+.success-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(212, 175, 55, 0.1);
+    border: 1px dashed #d4af37;
+    color: ivory;
+    text-align: center;
+    display: none;
+}
