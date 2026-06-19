@@ -941,3 +941,48 @@ input[type="submit"]{
 #bakeryModal .close-btn:hover {
     color: #d4af37;
 }
+
+.nav-search {
+    display: flex;
+    align-items: center;
+    background-color: #000000; /* Black background */
+    border: 1px solid #d4af37; /* Theme Gold border */
+    border-radius: 15px; 
+    padding: 0.25rem 0.5rem;
+    transition: box-shadow 0.3s ease;
+}
+
+
+.nav-search:focus-within {
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.5); 
+}
+
+.nav-search input {
+    border: none;
+    background: transparent;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    font-size: 0.95rem;
+    outline: none;
+    width: 180px;
+    color: #ffffff; /* White text so it's readable on black */
+}
+
+.nav-search input::placeholder {
+    color: #cccccc; /* Light grey placeholder text */
+}
+
+.nav-search button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    color: #d4af37; /* Gold search icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.nav-search button:hover {
+    transform: scale(1.1); /* Icon pops slightly when hovered */
+}
